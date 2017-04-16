@@ -1,0 +1,41 @@
+<PISI>
+    <Source>
+        <Name>gogland</Name>
+        <Packager>
+            <Name>Lukáš Novák</Name>
+            <Email>lthenovi@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <License>Proprietary</License>
+        <PartOf>programming</PartOf>
+        <Summary xml:lang="en">Gogland - Up and Coming Go IDE</Summary>
+        <Description xml:lang="en">Gogland - Up and Coming Go IDE</Description>
+        <Archive type="targz" sha1sum="cbe84d07fdec6425d8ac63b0ecd5e04148299c1c0c6d05751523aaaa9360110b">https://download.jetbrains.com/go/gogland-171.3780.106.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>gogland</Name>
+        <Summary xml:lang="en">Gogland - Up and Coming Go IDE</Summary>
+        <Description xml:lang="en">Gogland - Up and Coming Go IDE</Description>
+        <PartOf>programming</PartOf>
+        <Files>
+            <Path fileType="data">/opt/gogland</Path>
+            <Path fileType="data">/usr/bin/gogland</Path>
+            <Path fileType="data">/usr/share/applications/gogland.desktop</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gogland.desktop">gogland.desktop</AdditionalFile>
+        </AdditionalFiles>
+        <RuntimeDependencies>
+            <Dependency>openjdk-8</Dependency>
+        </RuntimeDependencies>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-03-22</Date>
+            <Version>2017.3.22</Version>
+            <Comment>Initial working Gogland</Comment>
+            <Name>Lukáš Novák</Name>
+            <Email>lthenovi@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
